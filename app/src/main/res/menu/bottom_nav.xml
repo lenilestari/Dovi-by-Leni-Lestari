@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Beranda"
+        android:id="@+id/home"
+        android:icon="@drawable/home_selector"/>
+
+    <item android:title="Categories"
+        android:id="@+id/categories"
+        android:icon="@drawable/categories_selector"/>
+
+    <item android:title="Watchlist"
+        android:id="@+id/watchlist"
+        android:icon="@drawable/watchlist_selector"/>
+
+    <item android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/profile_selector"/>
+
+</menu>

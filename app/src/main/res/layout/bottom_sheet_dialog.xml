@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tv_judulVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_toEndOf="@id/iv_logo"
+            android:layout_toRightOf="@id/iv_logo"
+            android:text="Judul Video"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_kategori_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_judulVideo"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_toEndOf="@id/iv_logo"
+            android:layout_toRightOf="@id/iv_logo"
+            android:text="Kategori"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_subkategori_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_kategori_detail"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_toEndOf="@id/iv_logo"
+            android:layout_toRightOf="@id/iv_logo"
+            android:text="subKategori"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+
+        <TextView
+            android:id="@+id/tv_tanggal_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_subkategori_detail"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_toEndOf="@id/iv_logo"
+            android:layout_toRightOf="@id/iv_logo"
+            android:text="Tanggal upload"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnSelesai"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            style="@android:style/Widget.Button"
+            android:background="@drawable/btn_background2"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="Tambah Favorite"
+            android:textColor="@color/white"
+            android:layout_below="@id/iv_logo"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13sdp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

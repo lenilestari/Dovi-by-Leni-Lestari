@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.Profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:scaleType="fitXY"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:background="@drawable/lingkaran" />
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/iv_fotoProfile"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:shapeAppearanceOverlay="@style/circular"
+                        android:background="@color/Abu"
+                        app:layout_constraintStart_toStartOf="@+id/imageView"
+                        app:layout_constraintTop_toBottomOf="@+id/imageView"
+                        app:srcCompat="@drawable/baseline_person_24" />
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leni Lestari"
+                        android:textColor="@color/black"
+                        android:layout_marginTop="13dp"
+                        android:textSize="17sp"
+                        android:textStyle="bold"
+
+                        app:layout_constraintEnd_toEndOf="@+id/iv_fotoProfile"
+                        app:layout_constraintStart_toStartOf="@+id/iv_fotoProfile"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_fotoProfile" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="lenilestari@gmail.com"
+                        android:textSize="15sp"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_nama"
+                        app:layout_constraintStart_toStartOf="@+id/tv_nama"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_nama" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_email">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background1"
+                            android:drawableStart="@drawable/ic_people"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:text="Leni Lestari"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            style="@android:style/Widget.Button"
+                            android:textAlignment="viewStart" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            style="@android:style/Widget.Button"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background1"
+                            android:drawableStart="@drawable/ic_school"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:text="Jurusan"
+                            android:textAlignment="viewStart" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button3"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            style="@android:style/Widget.Button"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background1"
+                            android:drawableStart="@drawable/ic_sosmed"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:text="Linkedin"
+                            android:textAlignment="viewStart" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button4"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            style="@android:style/Widget.Button"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background1"
+                            android:drawableStart="@drawable/ic_sosmed"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:text="Instagram"
+                            android:textAlignment="viewStart" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/button5"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="10dp"
+                            android:textSize="@dimen/_12sdp"
+                            android:textStyle="bold"
+                            style="@android:style/Widget.Button"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/btn_background1"
+                            android:drawableStart="@drawable/ic_keluar"
+                            android:drawablePadding="20dp"
+                            android:paddingStart="20dp"
+                            android:text="Keluar"
+                            android:textAlignment="viewStart" />
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            style="@android:style/Widget.Button"
+                            android:background="@drawable/btn_background2"
+                            android:layout_marginEnd="32dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginBottom="@dimen/_10sdp"
+                            android:text="Tentang Aplikasi dan Developer"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/_13sdp"/>
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

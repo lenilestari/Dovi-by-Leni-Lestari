@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Dovi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="DeskripsiVideo">kanso;finadsoigjsfioaejfiejhnipekfheaipfehipfeh</string>
+
+    <string-array name="spinner_jurusan">
+        <item>Pilih Jurusan</item>
+        <item>Manajemen Teknik Studio Produksi</item>
+        <item>Manajemen Produksi Berita</item>
+        <item>Manajemen Produksi Siaran</item>
+        <item>Teknologi Permainan</item>
+        <item>Animasi</item>
+        <item>Manajemen Informasi dan Komunikasi</item>
+    </string-array>
+
+    <string-array name="spinner_kategoriVideo">
+        <item>Pilih Kategori Video</item>
+        <item>televisi</item>
+        <item>radio</item>
+    </string-array>
+
+    <string-array name="spinner_subKategoriVideo">
+        <item>Pilih Sub Kategori Video</item>
+        <item>hiburan</item>
+        <item>berita</item>
+        <item>animasi</item>
+    </string-array>
+
+</resources>
