@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit
 class ApiClient {
 
     companion object {
-        private const val BASE_URL = "https://2163-2001-df0-7440-1018-d4fa-43c5-e3d7-75f9.ngrok-free.app" + "/api/v1/"
+        private const val BASE_URL = "https://3b0d-36-73-72-199.ngrok-free.app" + "/api/v1/"
         private const val TIMEOUT_SECONDS = 300L
 
         fun create(): APIServices {
